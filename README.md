@@ -1,86 +1,83 @@
-Task Management Application
-A simple task management application built with Node.js, Express.js, MongoDB, and React. This application allows users to manage tasks, authenticate, and track their progress in an intuitive and user-friendly dashboard.
+# Task Management Application
 
-Features
-User Authentication: Register, Login, and Protected Routes.
+A simple task management application built with **Node.js**, **Express.js**, **MongoDB**, and **React**. This application allows users to manage tasks, authenticate, and track their progress in an intuitive and user-friendly dashboard.
 
-Task Management: Add, Edit, Delete, and View Tasks.
+## Features
 
-Real-time Updates: Get updates on task status and details.
+- **User Authentication**: Register, Login, and Protected Routes.
+- **Task Management**: Add, Edit, Delete, and View Tasks.
+- **Real-time Updates**: Get updates on task status and details.
+- **Dashboard**: Overview of all tasks and task details.
+- **Validation**: Input validation for task and user data.
 
-Dashboard: Overview of all tasks and task details.
+## Tech Stack
 
-Validation: Input validation for task and user data.
+### Backend
+- **Node.js**: JavaScript runtime for the server.
+- **Express.js**: Web framework for routing and handling API requests.
+- **MongoDB**: NoSQL database to store task and user data.
+- **JWT**: JSON Web Tokens for authentication.
 
-Tech Stack
-Backend
-Node.js: JavaScript runtime for the server.
+### Frontend
+- **React.js**: JavaScript library for building user interfaces.
+- **TypeScript**: Type-safe JavaScript for the frontend.
+- **Vite**: Fast build tool for React applications.
 
-Express.js: Web framework for routing and handling API requests.
+## Installation
 
-MongoDB: NoSQL database to store task and user data.
+### Backend Setup
 
-JWT: JSON Web Tokens for authentication.
+1. Clone the repository:
 
-Frontend
-React.js: JavaScript library for building user interfaces.
+    ```bash
+    git clone <repo-url>
+    cd backend
+    ```
 
-TypeScript: Type-safe JavaScript for the frontend.
+2. Install dependencies:
 
-Vite: Fast build tool for React applications.
+    ```bash
+    npm install
+    ```
 
-Installation
-Backend Setup
-Clone the repository:
+3. Create a `.env` file in the `backend` folder and add the necessary environment variables:
 
-bash
-Copy
-Edit
-git clone <repo-url>
-cd backend
-Install dependencies:
+    ```env
+    DATABASE_URL=<your-database-url>
+    JWT_SECRET=<your-secret-key>
+    ```
 
-bash
-Copy
-Edit
-npm install
-Create a .env file in the backend folder and add the necessary environment variables:
+4. Run the server:
 
-env
-Copy
-Edit
-DATABASE_URL=<your-database-url>
-JWT_SECRET=<your-secret-key>
-Run the server:
+    ```bash
+    npm start
+    ```
 
-bash
-Copy
-Edit
-npm start
-Frontend Setup
-Navigate to the frontend folder:
+### Frontend Setup
 
-bash
-Copy
-Edit
-cd frontend
-Install dependencies:
+1. Navigate to the `frontend` folder:
 
-bash
-Copy
-Edit
-npm install
-Run the development server:
+    ```bash
+    cd frontend
+    ```
 
-bash
-Copy
-Edit
-npm run dev
-Open the application in your browser at http://localhost:3000.
+2. Install dependencies:
 
-Usage
-User Registration and Login: Users can register and log in via the authentication pages.
+    ```bash
+    npm install
+    ```
 
-Dashboard: After logging in, users can view all tasks, add new ones, and manage existing tasks.
+3. Run the development server:
 
-Task Management: Tasks can be added, updated, and deleted.
+    ```bash
+    npm run dev
+    ```
+
+4. Open the application in your browser at `http://localhost:3000`.
+
+## Usage
+
+- **User Registration and Login**: Users can register and log in via the authentication pages.
+- **Dashboard**: After logging in, users can view all tasks, add new ones, and manage existing tasks.
+- **Task Management**: Tasks can be added, updated, and deleted.
+
