@@ -1,24 +1,46 @@
+# Node modules
+node_modules/
+
 # Logs
 logs
 *.log
+*.log.*
+
+# Environment files
+.env
+
+# Build output
+/dist
+/build
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Debug files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS-specific files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Coverage directory
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+
+# Package lock files for Yarn
+yarn.lock
+
+# Optional npm cache directory
+.npm
+
+# npm package distribution files
+*.tgz
+
+# Next.js build output
+.next/
